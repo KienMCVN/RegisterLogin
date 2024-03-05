@@ -27,7 +27,7 @@ class CheckPassCMD extends Command implements PluginOwned {
 			return true;
 		}
 		 if(!$player->hasPermission("checkpass.cmd")){
-			player->sendMessage("§l§c• You Dont Have Permission");
+			$player->sendMessage("§l§c• You Dont Have Permission");
 			return true;
 		}
 		if(!isset($args[0])){
