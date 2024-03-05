@@ -1,5 +1,5 @@
 name: RegisterLogin
-main: RegisterLogin\KienMC\Main
+main: KienMC\RegisterLogin\Main
 api: 5.0.0
 version: 0.0.1
 author:
