@@ -15,7 +15,7 @@ class Main extends PluginBase implements Listener{
 	
 	public function onEnable(): void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->saveDefauthConfig()
+		$this->saveDefauthConfig();
 		$this->password = new Config($this->getDataFolder()."password.yml",Config::YAML);
 		$this->login = new Config($this->getDataFolder()."login.yml",Config::YAML);
 		$this->getServer()->getCommandMap()->register("/register", new RegisterCMD($this));
