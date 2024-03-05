@@ -12,10 +12,12 @@ use pocketmine\utils\Config;
 use KienMC\RegisterLogin\{RegisterCMD,LoginCMD,CheckPassCMD,TimeTask};
 
 class Main extends PluginBase implements Listener{
+
+	public $password, $login;
 	
 	public function onEnable(): void{
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->saveDefauthConfig();
+		$this->saveDefaultConfig();
 		$this->password = new Config($this->getDataFolder()."password.yml",Config::YAML);
 		$this->login = new Config($this->getDataFolder()."login.yml",Config::YAML);
 		$this->getServer()->getCommandMap()->register("/register", new RegisterCMD($this));
@@ -23,10 +25,6 @@ class Main extends PluginBase implements Listener{
 		$this->getServer()->getCommandMap()->register("/checkpass", new CheckPassCMD($this));
 		$this->getLogger()->notice("Plugin RegisterLogin Is On Enable");
 	}
-	
-	public $password;
-	
-	public $login;
 	
 	public function onJoin(PlayerJoinEvent $ev){
 		$player=$ev->getPlayer();
