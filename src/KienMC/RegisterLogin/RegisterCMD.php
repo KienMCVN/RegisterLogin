@@ -9,7 +9,7 @@ use pocketmine\Server;
 use pocketmine\plugin\PluginOwned;
 use pocketmine\command\{Command, CommandSender};
 use pocketmine\console\ConsoleCommandSender;
-use RegisterLogin\KienMC\Main;
+use KienMC\RegisterLogin\Main;
 
 class RegisterCMD extends Command implements PluginOwned {
 	
