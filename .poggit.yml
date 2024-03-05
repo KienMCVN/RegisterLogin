@@ -3,6 +3,6 @@ build-by-default: true
 branches:
 - main
 projects:
-  RegisterLogin-V0.0.1:
+  RegisterLogin:
     path: ""
 ...
