@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace RegisterLogin\KienMC;
+namespace KienMC\RegisterLogin;
 
 use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginOwned;
 use pocketmine\command\{Command, CommandSender};
 use pocketmine\console\ConsoleCommandSender;
-use RegisterLogin\KienMC\Main;
+use KienMC\RegisterLogin\Main;
 
 class CheckPassCMD extends Command implements PluginOwned {
 	
