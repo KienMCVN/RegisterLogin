@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace RegisterLogin\KienMC;
+namespace KienMC\RegisterLogin;
 
 use pocketmine\player\Player;
 use pocketmine\Server;
