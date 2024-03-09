@@ -1,2 +1,2 @@
-# RegisterLogin-V0.0.1
+# RegisterLogin
 Plugin RegisterLogin For Pocketmine-MP 5
